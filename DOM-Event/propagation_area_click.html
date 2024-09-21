@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        #item-2{
+            border: 2px solid violet;
+        }
+        ul{
+            border: 2px solid red;
+        }
+        body{
+            border: 2px solid green;
+        }
+        section{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <section id="list-container">
+         <h1>Cars Name</h1>
+    <ul id="list-ul">
+        <li id ="item-1">Toyota</li>
+        <li id ="item-2">Marcedies</li>
+        <li id ="item-3">Lamborginy</li>
+        <li id ="item-4">Porche</li>
+        <li id ="item-5">Suzuky</li>
+    </ul>
+    </section>
+   
+    <script src="JS/propagation_area_click.js"></script>
+    
+</body>
+</html>

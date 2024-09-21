@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="Styels/getElementsById_Tag_ClassName.css">
+</head>
+<body>
+    <h1>My Sleep Scheduled</h1>
+    <ul>
+        <li>3 pm to 10 am</li>
+        <li>4 pm to 12 pm</li>
+        <li>5 pm to 1 pm</li>
+        <li>a am to 3 pm</li>
+    </ul>
+    <h1 id="color">My Favourite Places</h1>
+    <ul>
+        <li class="selfie">Gaziput</li>
+        <li class="selfie">Rangpur</li>
+        <li class="selfie">Lalmunirhat</li>
+        <li >Chittagoan</li>
+    </ul>
+    <h1 class="havits">My Eating Havits</h1>
+    <ul>
+        <li>Mass</li>
+        <li>Dal</li>
+        <li>Burger</li>
+        <li>Vat</li>
+    </ul>
+
+    <script src="JS/index_1_dom.js"></script>
+
+    <script>// The output will be shown on the console of the browser.
+
+
+ /*  ---------- Using getElementsByTagName() ------
+        // console log use kora jabe
+        // for loop use kore iteration kora jabe 
+        */
+
+
+            // console.log('Inside the html File: ');
+       const name=document.getElementsByTagName('li');
+       for (li of name){
+             //console.log(li.innerText);
+        }
+
+        /*
+        ---------- using getElementById() ----------------
+        //Ekhane console.log use korbona
+        // Specific id er upor kaj kore
+        */
+       const heading=document.getElementById('color');{
+        heading.innerText='Khalid'; // Id="color" jei tag a silo oi tag ta text change kore dibe.
+       }
+
+
+        /*  ---------- Using getElementsByClassName() ------
+        // console log use kora jabe
+        // for loop use kore iteration kora jabe 
+        */
+        const classes=document.getElementsByClassName('selfie');
+       for(const cls of classes){
+        console.log(cls.innerText)
+       }
+
+
+       // QuearySelectorAll--
+       // .havits li erokom hole querySelectorAll() use korbo
+       const someLi=document.querySelectorAll('.havits li');
+       //console.log(someLi);
+        for (const some of someLi){
+        console.log(some.innerText);
+       }
+
+       // document.getElementByClassName('havits')[0].innerHTML  --> this will return first class html stucture of the document
+       // document.getElementByClassName('havits')[0].innerText  --> this will return first class text of the document
+       
+    </script>
+</body>
+</html>
+

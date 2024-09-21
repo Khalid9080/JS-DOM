@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="Styels/style_1.css">
+</head>
+<body>
+    <h1>My Sleep Scheduled</h1>
+    <ul>
+        <li>3 pm to 10 am</li>
+        <li>4 pm to 12 pm</li>
+        <li>5 pm to 1 pm</li>
+        <li>a am to 3 pm</li>
+    </ul>
+
+    <script src="JS/index_1_dom.js"></script>
+    <script>
+       // console.log('Inside the html File: ');
+       const name=document.getElementsByTagName('li');
+       for (li of name){
+        console.log(li.innerText);
+       }
+    </script>
+</body>
+</html>

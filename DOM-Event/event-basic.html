@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- To see the output, go to browser. -->
+<h1 onclick="console.log('Taka Send koro')">Send Money</h1>
+<button onclick="console.log(50)">Send</button>
+<button onclick="console.log(200)">Pathaw</button>
+
+<!-- Mathod-1: Directly set on html element
+  to make bg colorful , not using is better. -->
+<button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+<br>
+
+<!--Mathod-2: This is how we should use events, using a function -->
+<button onclick="makeRed()">Make Me Red</button>
+
+<!-- Mathod-3 : use id inside the button, 
+                then make a function in script tag
+                use the id name into th function to operate the events. -->
+<button id="make-blue">Make Me Blue</button>
+
+
+<!-- Mathod-3a :  Same as mathod-3 just .onclick=function use korte hobe. -->
+<button id="make-purple">Make Me Purple</button>
+
+<!-- Mathod-4 : use addEventListener('typle of event',function) -->
+<button id="make-pink">Make Me Pink</button>
+
+<!-- Mathod-4a : Same as Mathod 4 just use the full function inside the addEventListener() -->
+<button id="make-green">Make Green</button>
+
+
+<!-- Final Mathod-5 : We have to use getElementById() and addEventListener() together -->
+<button id="make-goldenrod">Make Me Golden Rod</button>
+
+<script src="JS/event-basic.js"></script>
+
+</body>
+
+</html>

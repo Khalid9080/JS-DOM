@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stying with js</title>
+    <link rel="stylesheet" href="./Styels/Styling_with_js.css">
+</head>
+
+<body>
+
+    <section id="id1">
+        <h1>Information About Data Science</h1>
+        <p class="class1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore vel atque voluptates ex neque
+            magni fugit, alias
+            omnis tempora optio facilis a necessitatibus amet quasi fuga magnam inventore et soluta officiis dolor quae
+            quis! Eligendi dolor maiores quibusdam quae voluptatibus nulla, fuga ea ducimus voluptates!
+        </p>
+        <ul class="class5">
+            <li>Artificial Inteligence</li>
+            <li>Data Science</li>
+            <li>Matchine Learning</li>
+            <li>Neural Network</li>
+        </ul>
+    </section>
+
+
+
+    <section id="id2">
+        <h1>Software Engineering</h1>
+        <p class="class2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore vel atque voluptates ex neque
+            magni fugit, alias
+            omnis tempora optio facilis a necessitatibus amet quasi fuga magnam inventore et soluta officiis dolor quae
+            quis! Eligendi dolor maiores quibusdam quae voluptatibus nulla, fuga ea ducimus voluptates!
+        </p>
+        <ul class="class6">
+            <li>Artificial Inteligence</li>
+            <li>Data Science</li>
+            <li>Matchine Learning</li>
+            <li>Neural Network</li>
+        </ul>
+    </section>
+
+    <section id="id3">
+
+        <h1>Network Engineering</h1>
+        <p class="class3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore vel atque voluptates ex neque
+            magni fugit, alias
+            omnis tempora optio facilis a necessitatibus amet quasi fuga magnam inventore et soluta officiis dolor quae
+            quis! Eligendi dolor maiores quibusdam quae voluptatibus nulla, fuga ea ducimus voluptates!
+        </p>
+        <ul class="class7">
+            <li>Artificial Inteligence</li>  //index-0
+            <li>Data Science</li>            //index-1
+            <li>Matchine Learning</li>       //index-2
+            <li>Neural Network</li>          //index-3
+        </ul>
+
+    </section>
+
+    <script src="JS/Styling_with_js.js"></script>
+</body>
+
+</html>
+
+
+------------------------------------------------------------- Notes --------------------------------------------------------------------------
+
+-- Output willbe shown in browser console. --
+
+--> id3 er Immediate child gulo show korbe
+
+const container1 = document.getElementById('id3')
+container1.childNodes
+container1.childNodes[1] -> id3 er 1 index a ki ase show korbe
+container1.childNodes[2].childNodes -> id3 er ul gulo show korbe
+container1.childNodes[2].childNodes[3].nextSiblings -> ul index 3 er por k ase oita show korbe
+
+--> Creating new Elements
+
+document.creatElement('p')
+output: <p> </p>
+document.creatElement('span')
+output: <span> </span>
+document.creatElement('div')
+output: <div> </div>
+
+--> Creating new Element li and append/add to ul
+
+const informationTechnology = document.querySelector('#id3 ul')
+informationTechnology
+output: <ul> </ul>
+
+const li = document.creatElement('li')
+li.innerText='Deep Learning'
+li 
+output: <li> Deep Learning </li>
+
+informationTechnology.append(li)
+
