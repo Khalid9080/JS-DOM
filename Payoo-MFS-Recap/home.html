@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" >
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -17,7 +17,7 @@
                 <div class="stats shadow">
                 <div class="stat">
                   <div class="stat-title">Account Balance</div>
-                  <div class="stat-value">9,400</div>
+                  <div id="account-balance" class="stat-value">9400</div>
                 </div>
               </div>
               
@@ -32,18 +32,18 @@
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input type="text" placeholder="Add Money Amount" class="input input-bordered" required />
+                        <input type="text" id="input-add-money" placeholder="Add Money Amount" class="input input-bordered" required />
                       </div>
 
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Pin Number</span>
                         </label>
-                        <input type="password" placeholder="Enter Pin Number" class="input input-bordered" required />
+                        <input type="password" id="input-pin-number" autocomplete="off" placeholder="Enter Pin Number" class="input input-bordered" required />
                       </div>
 
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary">Add Money</button>
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
