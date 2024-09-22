@@ -10,7 +10,10 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
 
     if(pinNUmber===123){
         const balance = getInputFieldValueById('account-balance')
-        console.log(balance);
+       const newBalance=balance-cashOut;
+
+       document.getElementById('account-balance').innerText=newBalance
+       
     }
     else{
         alert('no money for u')
